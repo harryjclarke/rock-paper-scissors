@@ -9,12 +9,24 @@
     <script>
         function getComputerChoice() {
             let computerOptions = ["rock", "paper", "scissors"];
-            console.log(computerOptions.length);
             let computerChoice = computerOptions[Math.floor(Math.random() * computerOptions.length)];
-            console.log(computerChoice);
+            return computerChoice;
         }
+
+        function oneRound(playerChoice, computerChoice) {
+            console.log("The computer chose " + computerChoice);
+            
+            if (playerChoice == "rock" && computerChoice == "scissors") {
+                console.log(playerChoice + " beats " + computerChoice + ", you win!")
+            }   else if (playerChoice == "rock" && computerChoice == "paper") {
+                console.log(computerChoice + " beats " + playerChoice + ", you lose!")
+            }
+        }
+
+        let playerChoice = prompt("Rock, paper or scissors?").toLowerCase();
+        let computerChoice = getComputerChoice();
+        oneRound(playerChoice, computerChoice);
     
-        getComputerChoice();
     </script>
 </body>
 </html>

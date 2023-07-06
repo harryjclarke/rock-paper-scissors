@@ -17,9 +17,19 @@
             console.log("The computer chose " + computerChoice);
             
             if (playerChoice == "rock" && computerChoice == "scissors") {
-                console.log(playerChoice + " beats " + computerChoice + ", you win!")
+                console.log("Rock beats scissors, you win!")
             }   else if (playerChoice == "rock" && computerChoice == "paper") {
-                console.log(computerChoice + " beats " + playerChoice + ", you lose!")
+                console.log("Paper beats rock, you lose!")
+            }   else if (playerChoice == 'paper' && computerChoice == 'rock') {
+                console.log("Paper beats rock, you win!")
+            }   else if (playerChoice == 'paper' && computerChoice == 'scissors') {
+                console.log("Scissors beat paper, you lose!")
+            }   else if (playerChoice == 'scissors' && computerChoice == 'paper') {
+                console.log("Scissors beat paper, you win")
+            }   else if (playerChoice == 'scissors' && computerChoice =='rock') {
+                console.log("Rock beats scissors, you lose!")
+            }   else {
+                console.log("It's a tie!")
             }
         }
 

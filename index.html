@@ -33,9 +33,15 @@
             }
         }
 
-        let playerChoice = prompt("Rock, paper or scissors?").toLowerCase();
-        let computerChoice = getComputerChoice();
-        oneRound(playerChoice, computerChoice);
+        function game() {
+            let playerChoice = prompt("Rock, paper or scissors?").toLowerCase();
+            let computerChoice = getComputerChoice();
+            oneRound(playerChoice, computerChoice);
+        }
+
+        for (let i = 0; i < 5; i++) {
+            game();
+        }
     
     </script>
 </body>
